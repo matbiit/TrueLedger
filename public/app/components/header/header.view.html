@@ -1,0 +1,55 @@
+<header class="container-fluid no-padding" ng-hide="header.header">
+  <div class="wrapper h-padding">
+
+    <div class="col-md-2 section" id="logo">
+      <a href="#!/app/home/{{params.user}}">
+        <h3 class="logo">
+          <span class="bold">True</span><span class="light">Ledger</span>
+        </h3>
+      </a>
+    </div>
+
+    <div class="col-md-4 section" id="nav-links">
+
+      <div class="nav-links">
+
+        <div class="nav-link active">
+          <a href="#!/app/home/{{params.user}}">
+            <i class="icon-home"></i>
+            <span>Início</span>
+          </a>
+        </div>
+
+        <div class="nav-link">
+          <a href="#!/app/historico/{{params.user}}">
+            <i class="icon-history"></i>
+            <span>Histórico</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-6 section" id="other-links">
+      <div class="wrapper">
+
+        <div class="search col-md-9 col-sm-6">
+          <input type="text" ng-model="search" placeholder="Pesquisar">
+        </div>
+
+        <div class="nav-links col-md-3 col-sm-6">
+          <div class="nav-link" title="Adicionar" ng-click="openModal()">
+            <i class="icon-plus"></i>
+          </div>
+          <div class="nav-link">
+            <span><a href="#/login">Sair</a></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</header>

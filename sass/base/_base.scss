@@ -1,0 +1,153 @@
+ * {
+   font-family: $default-font-family !important;
+ }
+
+ html, body {
+   min-height: 100%;
+ }
+
+ body {
+   background-color: $background-color;
+
+   > .content {
+     margin-top: 80px;
+     min-height: 100%;
+   }
+
+ }
+
+ input {
+   width: 100%;
+   padding: 10px 15px;
+   border: solid 1px #f0f0f0;
+   border-radius: 10px;
+   font-weight: 300;
+   box-shadow: inset -1px -1px 0 $box-shadow-color;
+
+   &:focus {
+     opacity: 1 !important;
+     outline-width: 0;
+   }
+ }
+
+ .hidden {
+   display: none;
+ }
+
+ .full-height {
+   min-height: 100%;
+ }
+
+ .right {
+   float: right;
+ }
+
+ .no-padding {
+   padding: 0;
+ }
+
+ .h-padding {
+   padding-left: 25px;
+   padding-right: 25px;
+ }
+
+.logo {
+  font-weight: lighter;
+
+  > span {
+    display: inline-block;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: $font-color;
+    text-decoration: none;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.blue {
+  background-color: #4178BE !important;
+  border-color: #4178BE !important;
+  color: #fff !important;
+
+  &:before {
+    border-color: #4178BE !important;
+  }
+}
+
+.yellow {
+  background-color: #FDD600 !important;
+  border-color: #FDD600 !important;
+  color: $font-color !important;
+
+  &:before {
+    border-color: #FDD600 !important;
+  }
+}
+
+.red {
+  background-color: #E71D32 !important;
+  border-color: #E71D32 !important;
+  color: #fff !important;
+
+  &:before {
+    border-color: #E71D32 !important;
+  }
+}
+
+.teal {
+  background-color: #41D6C3 !important;
+  border-color: #41D6C3 !important;
+  color: $font-color !important;
+
+  &:before {
+    border-color: #41D6C3 !important;
+  }
+}
+
+.magenta {
+  background-color: #DB2780 !important;
+  border-color: #DB2780 !important;
+  color: #fff !important;
+
+  &:before {
+    border-color: #DB2780 !important;
+  }
+}
+
+.black {
+  background-color: #121212 !important;
+  border-color: #121212 !important;
+  color: #fff !important;
+
+  &:before {
+    border-color: #121212 !important;
+  }
+}
+
+.green {
+  background-color: #8CD211 !important;
+  border-color: #8CD211 !important;
+  color: #000 !important;
+
+  &:before {
+    border-color: #8CD211 !important;
+  }
+}

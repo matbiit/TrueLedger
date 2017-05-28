@@ -1,0 +1,22 @@
+<div class="flexible-table">
+  <div class="table-head container-fluid">
+    <div class="table-row row" ng-click="openRow()">
+      <div class="col-md-2 table-cell">Lote</div>
+      <div class="col-md-2 table-cell">Tamanho</div>
+      <div class="col-md-2 table-cell">Origem Cid.</div>
+      <div class="col-md-2 table-cell">Origem País</div>
+      <div class="col-md-2 table-cell">Material</div>
+      <div class="col-md-2 table-cell">Tipo</div>
+    </div>
+  </div>
+  <div class="table-body container-fluid">
+    <div class="table-row row" ng-click="openRow()">
+      <div class="col-md-2 table-cell">{{data._id}}</div>
+      <div class="col-md-2 table-cell">{{data.info.size}}</div>
+      <div class="col-md-2 table-cell">{{data.info.suppCity}}</div>
+      <div class="col-md-2 table-cell">{{data.info.suppCountry}}</div>
+      <div class="col-md-2 table-cell">{{data.info.feedstock}}</div>
+      <div class="col-md-2 table-cell">{{data.info.clothesType}}</div>
+    </div>
+  </div>
+</div> <!-- END TABLE -->

@@ -1,0 +1,10 @@
+.cadastro-wrapper {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  width: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  border: solid;
+  z-index: 50;
+}

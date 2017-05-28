@@ -1,0 +1,93 @@
+.timeline {
+
+  .wrapper {
+
+  }
+
+  position: absolute;
+
+  top: 55%;
+  left: 120px;
+
+  transform: translate(0, -50%);
+
+  &:before {
+    content: "";
+    width: 10px;
+    min-height: 80vh;
+    // margin-left: 30px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+50,ffffff+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, transparent 0%, $hover-background-color 15%, $hover-background-color 50%, $hover-background-color 85%, transparent 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, $hover-background-color 15%, $hover-background-color 50%, $hover-background-color 85%, transparent 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, $hover-background-color 15%, $hover-background-color 50%, $hover-background-color 85%, transparent 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='transparent', endColorstr='transparent',GradientType=0 ); /* IE6-9 */
+
+  }
+
+  .timeline-marks {
+
+    > .timeline-mark {
+      position: absolute;
+
+      left: -10px;
+
+      width: 30px;
+      height: 30px;
+
+      border-radius: 50%;
+      background-color: $font-color;
+
+      .timeline-mark-date {
+        opacity: 0;
+        transition: opacity .2s ease;
+
+        position: absolute;
+        left: -15px;
+
+        padding: 5px;
+
+        transform: translate(-100%, 0);
+
+        background-color: $font-color;
+        color: #fff;
+        box-shadow: 3px 3px 0 $box-shadow-color;
+
+        &:before {
+          position: absolute;
+          right: -19px;
+          content: "";
+
+          border: solid 10px transparent;
+          border-left-color: $font-color;
+        }
+      }
+
+      &:hover .timeline-mark-date {
+        opacity: 1;
+      }
+
+      &.current .timeline-mark-date {
+        opacity: 1 !important;
+      }
+
+      &.current {
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      &.previous {
+        top: 15%;
+        transform: translate(0, -15%);
+      }
+
+      &.next {
+        top: 85%;
+        transform: translate(0, -85%);
+      }
+    }
+
+  }
+
+}

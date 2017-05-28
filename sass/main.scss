@@ -1,0 +1,32 @@
+// Base CSS
+// Joins partial files
+
+$default-font-family: "Roboto", Arial, sans-serif;
+$font-color: #323232;
+$base-font-size: 1.1rem;
+$base-line-height: 1.625rem;
+
+$light-font-color: #fff;
+
+$glass-background-color: rgba(255, 255, 255, .9);
+$background-color: #FAFAFA;
+$hover-background-color: #E7E7E7;
+
+$box-shadow-color: #eaeaea;
+// $dark-box-shadow-color: #006D5D;
+// $dark-background-color: #264A60;
+
+@import 'vendors/ibm-style';
+
+@import 'base/_base';
+@import 'base/_clearfix';
+
+@import 'components/table/_table';
+@import 'components/card/_card';
+@import 'components/assets-view/_assets-view';
+@import 'components/header/_header';
+@import 'components/timeline/_timeline';
+@import 'components/modal/modal';
+
+@import 'views/asset/asset';
+@import 'views/client-section/client-section';

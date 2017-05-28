@@ -1,0 +1,77 @@
+.client-section {
+  margin-top: -80px;
+
+  .header {
+    padding: 20px 25px;
+
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    margin: 0;
+    padding: 60px 25px;
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, .2);
+
+    &:first-child {
+      box-shadow: none;
+    }
+
+    &.with-arrow:before {
+      position: absolute;
+      z-index: 1000;
+      content: "";
+
+      border: solid 40px transparent;
+
+    }
+
+    &.bottom {
+
+      &:before {
+        bottom: -75px;
+        left: 50%;
+
+        transform: translate(-50%, 0);
+        border-top-color: $background-color;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+      }
+
+      &:last-child {
+        &:before {
+          border: none;
+        }
+      }
+
+    }
+  }
+
+
+  .selos {
+    padding: 50px;
+
+    .selo {
+
+      position: absolute;
+      left: 50%;
+
+      transform: translate(-50%, 0);
+
+      i {
+        font-size: 4rem;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}

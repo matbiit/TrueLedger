@@ -1,0 +1,56 @@
+<div class="content col-md-5">
+  <h3 class="title">Cadastrar Nova Cadeia</h3>
+
+  <!-- form -->
+
+  <form>
+    <div class="form-group">
+      <label for="clothesType">Tipo de Peça:</label>
+      <input type="text" class="" id="clothesType" ng-model="chain.type">
+    </div>
+    <div class="form-group">
+      <label for="color">Cor:</label>
+      <input type="text" class="" id="color" ng-model="chain.color">
+    </div>
+    <div class="form-group">
+      <label for="size">Tamanho:</label>
+      <input type="text" class="" id="size" ng-model="chain.size">
+    </div>
+    <div class="form-group">
+      <label for="feedStock">Matéria-prima:</label>
+      <input type="text" class="" id="feedStock" ng-model="chain.feedstock">
+    </div>
+    <div class="form-group">
+      <label for="suppName">Nome do Fornecedor:</label>
+      <input type="text" class="" id="suppName" ng-model="chain.suppName">
+    </div>
+    <div class="form-group">
+      <label for="suppCity">Cidade do Fornecedor:</label>
+      <input type="text" class="" id="suppCity" ng-model="chain.suppCity">
+    </div>
+    <div class="form-group">
+      <label for="suppCountry">País do Fornecedor:</label>
+      <input type="text" class="" id="suppCountry" ng-model="chain.suppCountry">
+    </div>
+    <div class="form-group">
+      <label for="suppProDate">Data de Produção da Matéria-prima:</label>
+      <input type="text" class="" id="suppProDate" ng-model="chain.suppProDate">
+    </div>
+  </form>
+
+  <!-- end form -->
+
+  <div class="options">
+
+    <div class="option" title="Confirm" ng-click="create()">
+      <i class="icon-check"></i>
+    </div>
+    <div class="option"
+         title="Cancel"
+         ng-click="close()">
+      <i class="icon-times"></i>
+    </div>
+
+  </div>
+
+</div> <!-- END CONTENT -->

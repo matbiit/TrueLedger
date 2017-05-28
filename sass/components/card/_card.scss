@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 15px;
+
+  box-shadow: 3px 3px 0 $box-shadow-color;
+  background-color: $background-color;
+  // border-radius: 3px;
+
+  &.with-arrow:before {
+    position: absolute;
+    content: "";
+
+    border: solid 40px;
+
+  }
+
+  &.bottom:before {
+    bottom: -80px;
+    border-top-color: $background-color;
+  }
+
+}

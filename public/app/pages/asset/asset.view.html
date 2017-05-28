@@ -1,0 +1,98 @@
+<div class="asset-view" ng-controller="AssetController" ng-init="init()">
+
+  <div class="timeline">
+    <div class="wrapper">
+
+      <div class="timeline-marks">
+
+        <div class="timeline-mark previous teal">
+          <span class="timeline-mark-date">Anterior</span>
+        </div>
+
+        <div class="timeline-mark current teal">
+          <span class="timeline-mark-date">Atual</span>
+        </div>
+
+        <div class="timeline-mark next teal">
+          <span class="timeline-mark-date">Próximo</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EMPTY COLUMN  -->
+  <div class="span col-md-2"></div>
+
+  <div class="content-col col-md-9">
+    <div class="wrapper with-arrow">
+
+      <div class="info">
+
+        <h3 class="normal">{{data.info.suppName}}</h3>
+        <h4 class="light">#{{data._id}}</h4>
+        <br>
+
+        <div class="row">
+
+          <div class="col-md-3">
+            <h5 class="light">Tipo</h5>
+            <p class="normal">{{data.info.clothesType}}</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="light">Cor</h5>
+            <p class="normal">{{data.info.color}}</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="light">Tamanho</h5>
+            <p class="normal">{{data.info.size}}</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="light">Material</h5>
+            <p class="normal">{{data.info.feedstock}}</p>
+          </div>
+
+
+        </div>
+
+        <br>
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <h5 class="light">Cidade</h5>
+            <p class="normal">{{data.info.suppCity}}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="light">Cidade</h5>
+            <p class="normal">{{data.info.suppCity}}</p>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="light">Data</h5>
+            <p class="normal">{{data.info.suppProdDate}}</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="options">
+
+        <div class="option" title="Transferir" ng-click="transferAsset()">
+          <i class="icon-exchange"></i>
+        </div>
+        <div class="option" title="Alert">
+          <i class="icon-flag"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
