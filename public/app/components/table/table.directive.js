@@ -6,8 +6,8 @@ app.directive("tableElement", function($location, $stateParams) {
     scope: true,
     link: function (scope, element, attrs) {
 
-      scope.openRow = function() {
-        $location.url("app/lote/" + scope.data._id + "/" + $stateParams.user);
+      scope.openRow = function(aRowId) {
+        $location.url("app/lote/" + aRowId + "/" + $stateParams.user);
       }
 
     }

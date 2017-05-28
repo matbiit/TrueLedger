@@ -10,13 +10,13 @@
     </div>
   </div>
   <div class="table-body container-fluid">
-    <div class="table-row row" ng-click="openRow()">
-      <div class="col-md-2 table-cell">{{data._id}}</div>
-      <div class="col-md-2 table-cell">{{data.info.size}}</div>
-      <div class="col-md-2 table-cell">{{data.info.suppCity}}</div>
-      <div class="col-md-2 table-cell">{{data.info.suppCountry}}</div>
-      <div class="col-md-2 table-cell">{{data.info.feedstock}}</div>
-      <div class="col-md-2 table-cell">{{data.info.clothesType}}</div>
+    <div class="table-row row" ng-click="openRow(row._id)" ng-repeat="row in data">
+      <div class="col-md-2 table-cell">{{row._id}}</div>
+      <div class="col-md-2 table-cell">{{row.info.size}}</div>
+      <div class="col-md-2 table-cell">{{row.info.suppCity}}</div>
+      <div class="col-md-2 table-cell">{{row.info.suppCountry}}</div>
+      <div class="col-md-2 table-cell">{{row.info.feedstock}}</div>
+      <div class="col-md-2 table-cell">{{row.info.clothesType}}</div>
     </div>
   </div>
 </div> <!-- END TABLE -->

@@ -11,7 +11,7 @@ app.controller("HomeController", function($scope, $stateParams, MainService, DBS
 
       console.log(response);
 
-      vm.data = response.data[0];
+      vm.data = response.data;
 
     })
 

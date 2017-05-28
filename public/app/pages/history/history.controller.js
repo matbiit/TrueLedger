@@ -11,7 +11,7 @@ app.controller("HistoryController", function($scope, $stateParams, MainService, 
 
       console.log(response);
 
-      vm.data = response.data[0];
+      vm.data = response.data;
 
     })
 

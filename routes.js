@@ -213,7 +213,7 @@ routes.prototype.createChain = (req,res) => {
 
     db.insert(chain, function(err, body){
       if(err) reject(err);
-      else console.log(body);
+      else res.json(body);
     });
 
 
